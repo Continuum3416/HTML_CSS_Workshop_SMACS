@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
         .tweet-button{  
             background-color: #1DA1F2;
             padding: 10px;
@@ -15,19 +16,52 @@
             box-shadow: 2px 2px 5px black; /*left, bottom, spread*/
             margin: 20px 20px;
         }
-        .youtube-logo{
+        .tweet-button:hover{
+            background-color: #1e8cd1;
+        }
+        .youtube-button{
             background-color: #FF0000;
             text-decoration: none;
             color: white;
+            font-family: 'Roboto';
             padding: 12px;
             min-width: 45px;
             border-radius: 4px; 
             box-shadow: 2px 2px 5px black;
+            font-weight: bold;
         }
+
+        .join-button{
+            background-color: white;
+            border-color: rgb(41, 118, 211);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(41, 118, 211);
+            height: 36px;
+            width: 62px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s;
+            /**transition background color, and text color smoothly*/
+        }
+
+        .join-button:hover{
+            background-color: rgb(41, 118, 211);
+            color: white;
+        }
+        /* Active when the user press down the button */
+        .join-button:active{
+            opacity: 0.7;
+        }
+        
     </style>
 </head>
 <body>
     <button class="tweet-button">Tweet</button>
-    <a href="" class="youtube-logo">Youtube</a>
+    <a href="" class="youtube-button">Subscribe</a>
+    <button class="join-button">JOIN</button>
+    <p style="font-style: italic; width: 60vw; margin: 30px auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
 </body>
 </html>
